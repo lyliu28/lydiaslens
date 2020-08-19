@@ -1,0 +1,103 @@
+@import url('https://fonts.googleapis.com/css2?family=Varta:wght@515&display=swap');
+
+* {
+  background-color: rgb(255, 255, 255);
+  box-sizing: border-box;
+
+}
+
+.title{
+    margin-top: 20px;
+    margin-bottom: 10px;
+    font-size: 34px;
+    color:grey;
+    font-family: 'Varta', sans-serif;
+    text-align: center;
+    @media only screen and (max-width: 500px) {
+        font-size: 20px;
+        margin-left: 0
+}}
+
+.item{
+  color: grey;
+  margin-right: 40x;
+  margin-bottom: 10px;
+  font-weight: 30px;
+  font-family: 'Varta', sans-serif;
+  text-decoration: none;
+}
+
+.item_underlined{
+  color: rgb(92, 16, 16);
+  margin-right: 40x;
+  margin-bottom: 10px;
+  font-weight: 30px;
+  font-family: 'Varta', sans-serif;
+  text-decoration: none;
+
+}
+
+
+.text-block {
+  position: absolute;
+  bottom: 30px;
+  font-size: 15px;
+  left: 49%;
+  margin-left: -32px;
+  color: #2c6277;
+  }
+  
+
+.gallery-container{
+  padding-top: 50px;
+  text-align: center;
+  line-height: 0px;
+  padding-bottom: 50px;
+}
+
+
+.parallax {
+  /* The image used */
+  background-image: url("photos/me_at_mt_tam.jpg");
+
+  /* Set a specific height */
+  min-height: 530px;
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: left;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.parallax1 {
+  /* The image used */
+  background-image: url("photos/travel/goldengate.jpg");
+
+  /* Set a specific height */
+  min-height: 400px;
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: left;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+
+
+
+.category-container{
+  padding-top: 0px;
+  padding-bottom: 200px;
+  text-align: center;
+  line-height: 0px;
+
+}
+
+.cat-large-container{
+text-align: center;
+
+}
+
+
