@@ -7,6 +7,9 @@ const ImageContainer = styled.div`
     display: flex;
     flex-direction: column;
     text-align: center;
+    width: 100%;
+    height: inherit;
+    overflow: hidden;
 `
 
 const Modal = styled.div`
@@ -22,19 +25,24 @@ const Modal = styled.div`
     background-color: white;
     @media only screen and (max-width: 500px) {
       padding: 10px;
-      `
+    }
+  `
 
 const Image = styled.img`
     width:inherit;
     height:300px;
     object-fit: cover;
     cursor: pointer;
+    &:hover {
+      transform: scale(1.05);
+      -webkit-transition: transform 0.5s ease-in-out;
+    }
     @media only screen and (max-width: 500px) {
       height: 200px;
   }`
 
 const LargeImage = styled.img`
-    width:70%;
+    height:100%;
     @media only screen and (max-width: 500px) {
       padding-top: 1%;
       width: 100%;
@@ -63,12 +71,12 @@ const Close = styled.span`
     color: #cdd0d1;
     position: absolute;
     top: 30px;
-    right: 25px;
+    right: 30px;
     font-size: 45px;
     font-weight: bold;
-    opacity: 0.4;
+    opacity: 0.7;
     &:hover {
-      opacity: 0.7;
+      opacity: 0.9;
       color: #cdd0d1;
       text-decoration: none;
       cursor: pointer;

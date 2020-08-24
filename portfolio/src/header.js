@@ -23,6 +23,15 @@ const Name = styled.h1`
     }
 
 `
+const Item = styled.div`
+    margin: 14px;
+
+    @media screen and (max-width: 600px) {
+        margin: 3px;
+        color: grey;
+
+    }
+`
 
 const Social = styled.div`  
     margin-left:auto;
@@ -43,8 +52,13 @@ const Header = () => {
 
     return <Top>
            <Name>Lydiaslens</Name>
-            <Link style = {{"margin": "14px"}} to="/" onClick={() => setSelected("/")} className={selected === "/"? "item_underlined" : "item"}>Photography</Link>
-            <Link style = {{"margin": "14px"}} to="/about" onClick={() => setSelected("/about")} className={selected === "/about"? "item_underlined" : "item"}>About</Link>
+            <Item>
+                <Link  to="/" onClick={() => setSelected("/")} className={selected === "/"? "item_underlined" : "item"}>Photography</Link>
+            </Item>
+            <Item>
+                <Link to="/about" onClick={() => setSelected("/about")} className={selected === "/about"? "item_underlined" : "item"}>About</Link>
+            </Item>
+
         <Social>
             <a  target="_blank" href="https://www.instagram.com/lydiaslens/">
             <img src={insta_logo} style={{width:22, margin: "14px"}} />
