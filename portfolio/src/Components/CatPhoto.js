@@ -42,7 +42,7 @@ const Image = styled.img`
   }`
 
 const LargeImage = styled.img`
-    height:100%;
+    height:95%;
     @media only screen and (max-width: 500px) {
       padding-top: 1%;
       width: 100%;
